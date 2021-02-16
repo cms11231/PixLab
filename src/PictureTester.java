@@ -9,6 +9,9 @@
 public class PictureTester
 {
   /** Method to test zeroBlue */
+
+
+
   public static void testZeroBlue()
   {
     Picture beach = new Picture("beach.jpg");
@@ -45,14 +48,14 @@ public class PictureTester
     water.explore();
   }
   
-  /** Method to test mirrorVertical */
-  public static void testMirrorVertical()
-  {
-    Picture caterpillar = new Picture("caterpillar.jpg");
-    caterpillar.explore();
-    caterpillar.mirrorVertical();
-    caterpillar.explore();
-  }
+  // /** Method to test mirrorVertical */
+  // public static void testMirrorVertical()
+  // {
+  //   Picture caterpillar = new Picture("caterpillar.jpg");
+  //   caterpillar.explore();
+  //   caterpillar.mirrorVertical();
+  //   caterpillar.explore();
+  // }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -61,6 +64,14 @@ public class PictureTester
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
+  }
+
+  public static void testMirrorGull()
+  {
+    Picture gull = new Picture("seagull.jpg");
+    gull.explore();
+    gull.mirrorGull();
+    gull.explore();
   }
   
   /** Method to test the collage method */
@@ -78,6 +89,30 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+
+  public static void testMirrorRightToLeft()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+
+  public static void testMirrorDiagonal()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorDiagonal();
+    caterpillar.explore();
+  }
+
+  public static void testMyCollage(){
+    Picture blank = new Picture("7inX95in.jpg");
+    blank.myCollage();
+    blank.explore();
+  }
+
+
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -92,13 +127,14 @@ public class PictureTester
     //testKeepOnlyGreen();
     // testNegate();
     // testGrayscale();
-    testFixUnderwater();
+    // testFixUnderwater();
     //testMirrorVertical();
-    //testMirrorTemple();
+    // testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
-    //testMirrorDiagonal();
-    //testCollage();
+    // testMirrorGull();
+    // testMirrorDiagonal();
+    // testMirrorRightToLeft();
+    testMyCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
